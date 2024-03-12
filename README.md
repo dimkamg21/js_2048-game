@@ -2,8 +2,10 @@
 Hey! Are you ready for a real hard check of your JavaScript skills, ninja? If you are still here, let's do it.
 
 In this task, I implemented the 2048 game like in this [reference](https://play2048.co/) Don't play for too long!
-  So here we go!
-    - [DEMO LINK](https://dimkamg21.github.io/js_2048-game/)
+
+So here we go!
+## Links:
+  - [DEMO LINK](https://dimkamg21.github.io/js_2048-game/)
 
 ## Technologies
 
