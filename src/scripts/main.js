@@ -382,19 +382,21 @@ function createMatrixValueCopy() {
 }
 
 function gameLost() {
-  let check = false;
   const copyMatrixValue = createMatrixValueCopy();
 
-  for (let r = 0; r < 3; r++) {
+  for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 4; c++) {
-      if (copyMatrixValue[r][c] === copyMatrixValue[r + 1][c]
-        || copyMatrixValue[r][c] === copyMatrixValue[r][c + 1]) {
-        check = true;
+      if (r < 3 && copyMatrixValue[r][c] === copyMatrixValue[r + 1][c]) {
+        return true;
+      }
+
+      if (c < 3 && copyMatrixValue[r][c] === copyMatrixValue[r][c + 1]) {
+        return true;
       }
     }
   }
 
-  if (!check && !checkForEmpty()) {
+  if (!checkForEmpty()) {
     return false;
   }
 
